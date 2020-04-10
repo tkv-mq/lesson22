@@ -1,0 +1,12 @@
+{% extends "homepage.html" %}
+
+{% block content %}
+    <div>
+        <b>Список лекарств:</b>
+        <ul>
+            {% for element in lst %}
+                <li>{{ element }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
